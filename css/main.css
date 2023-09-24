@@ -1,0 +1,40 @@
+/*------------------------------- Main -------------------------------*/
+
+#mainContainer{
+    position: relative;
+    text-align: center;
+    min-height: 25em;
+    display: grid;
+    align-items: center;
+    justify-content: center
+}
+
+#mainH1{
+    font-size: 5em;
+}
+
+#imageContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    flex: 1;
+    min-width: 0;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+.imgContainer{
+    height: 300em;
+    width: 700em;
+}
+
+.item img {
+    box-sizing: border-box;
+    display: block;
+    max-height: 300px;
+    max-width: 100%;
+    overflow-x: clip;
+    overflow-y: clip;
+}

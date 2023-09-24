@@ -1,0 +1,101 @@
+.flexCon{
+    display: flex;
+    background-color: #000;
+    color: grey;
+    gap: 20em;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#Sandwich{
+    display: none;
+}
+
+.burger-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    appearance: button;
+}
+
+.bar {
+    background: #000;
+    height: 3px;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Анимация для открытого состояния */
+.burger-button.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-4px, 4px);
+}
+
+.burger-button.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-button.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-4px, -4px);
+}
+
+
+/*------------------------------- First block -------------------------------*/
+
+
+#firstBlock{
+    background-color: #9acd32;
+    color: #adff2f;
+    position: relative;
+    text-align: center;
+    min-height: 25em; 
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#inFistBlockHeader{
+    font-size: 6em;
+}
+
+#inFirstBlockp{
+    font-size: 2em;
+}
+
+p.EngageButton{
+    background-color: rgb(52, 152, 182);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 150px;
+    margin: 20px;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+    cursor: pointer;
+    user-select: none;
+}
+
+p.EngageButton:hover{
+    background-color:  rgb(46, 127, 152);
+}
+
+p.EngageButton:active{
+    background-color:  rgb(29, 90, 108);
+}
+
+#ButtonDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttonText{
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+}
