@@ -1,15 +1,16 @@
+
+
+#Form{
+    align-self: flex-end;
+}
+
 nav{
     position: fixed;
     right: 0;
     left: 0;
     z-index: 1000;
+    display: table;
 }
-
-
-#Form{
-    margin-left: 300px;
-}
-
 
 .flexCon{
     display: flex;
@@ -55,59 +56,29 @@ ul{
     transform: rotate(45deg) translate(-4px, -4px);
 }
 
+.hided{
+    display: flexbox;
+    gap: 20px;
+    justify-content: space-between;
+
+}
+
+.buttonTop{
+    color: grey;
+    text-decoration: none;
+}
+
+.hide{
+    margin-left: 30px;
+}
+
+
+@media (max-width: 800px) {
+    .hide{
+        display: none;
+    }
+  }
+
 
 /*------------------------------- First block -------------------------------*/
 
-
-#firstBlock{
-    background-color: #9acd32;
-    color: #adff2f;
-    position: relative;
-    text-align: center;
-    min-height: 25em; 
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
-#inFistBlockHeader{
-    font-size: 6em;
-}
-
-#inFirstBlockp{
-    font-size: 2em;
-}
-
-p.EngageButton{
-    background-color: rgb(52, 152, 182);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 45px;
-    width: 150px;
-    margin: 20px;
-    border-radius: 5px;
-    transition: opacity 0.3s;
-    cursor: pointer;
-    user-select: none;
-}
-
-p.EngageButton:hover{
-    background-color:  rgb(46, 127, 152);
-}
-
-p.EngageButton:active{
-    background-color:  rgb(29, 90, 108);
-}
-
-#ButtonDiv{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#buttonText{
-    color: white;
-    font-size: 19px;
-    text-decoration: none;
-}
