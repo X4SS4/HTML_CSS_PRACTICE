@@ -1,0 +1,62 @@
+article, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+a {
+    background-color: transparent;
+}
+
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+img {
+    border: 0;
+}
+
+figure {
+    margin: 1em 40px;
+}
+
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+}
+
+pre {
+    overflow: auto;
+}
+
+
+button, input, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+
+button {
+    overflow: visible;
+}
+  
+button, select {
+text-transform: none;
+}
+
+
+input {
+    line-height: normal;
+}
+
+
+textarea {
+    overflow: auto;
+}
