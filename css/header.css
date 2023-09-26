@@ -1,0 +1,268 @@
+/* NAVIGATIOBAR START */
+#buffer{
+    height: 50px;
+}
+
+.flexboxTop{
+    display: flex;
+    gap: 1em;
+    flex-wrap: nowrap;
+    color: grey;
+    background-color: #222;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    cursor: pointer;
+    user-select: none;
+}
+/* NAVIGATIONBAR END*/
+
+
+/* .flexboxTop > div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+} */
+
+/* LOGO START */
+#logo{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    font-size: 20px;
+    margin-left: auto;
+    filter: grayscale(100%);
+}
+
+#logo:hover{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    font-size: 20px;    
+    margin-left: auto;
+    color: white;
+    filter:contrast(100%);
+}
+/* LOGO END */
+
+
+/* SERVICES START */
+#sandwich{
+    display: none;
+    background-color: white;
+    color: black;
+    position: absolute;
+    list-style: none;
+    top: 100%;
+    left: 0px;
+    width: 150px;
+    padding: 1px;
+    border: 1px ;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+#sandwich > li:hover{
+    background-color: rgb(210, 207, 207);
+}
+#serviceList:hover #sandwich{
+    display: block;
+}
+/* SERVICES END */
+
+
+
+/* HOME ABOUT PRODUCT START */
+.hideTo800px{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.hideTo800px:hover{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+/* HOME ABOUT PRODUCT END */
+
+
+/* SEARCJINBAR START */
+#searchingElements{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 1px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.inputSearch{
+    border-radius: 6px;
+    background-color: white;
+}
+/* SEARCJINBAR END */
+
+/* BURGER START */
+.burger{
+    display: none;
+    background-color: #222;
+    transform: rotate(90deg);
+    margin-right: 2em;
+    height: 100%;
+    width: 2rem;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    color: white;
+    border: 1px solid grey;
+}
+
+.burger:hover{
+    background-color: #545252;
+    margin-right: 2em;
+    height: 100%;
+    width: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    color: white;
+    border: 1px solid grey;
+}
+
+.burgersMenu{
+    visibility: collapse;
+    width: 100%;
+    background-color: #222;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    cursor: pointer;
+    user-select: none;
+    max-height: 20em;
+    padding: 1em;
+    list-style: none;
+    overflow: auto;
+}
+
+.burger:hover + .burgersMenu{
+    visibility: visible;
+    width: 100%;
+    background-color: #222;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    cursor: pointer;
+    user-select: none;
+    max-height: 20em;
+    padding: 1em;
+    list-style: none;
+    overflow: auto;
+}
+
+.burgersMenu > li {
+    padding: 10px;
+}
+
+.burgersMenu > li:hover{
+    background-color: black;
+}
+
+.burgersMenu > li:hover > ul{
+    background-color: #222;
+}
+
+.burgersMenu > li > ul > li:hover{
+    margin: 0;
+    color: white;
+}
+
+#ulServices{
+    position: relative;
+}
+
+#liServices{
+    display: none;
+    position: absolute;
+    padding: 1em;
+    list-style: none;
+    top: 100%;
+    left: 0px;
+}
+
+#ulServices:hover > #liServices{
+    display: block;
+    position: absolute;
+    padding: 1em;
+    list-style: none;
+    top: 100%;
+    left: 0px;
+}
+
+#liServices > li{
+    padding: 10px;
+}
+
+/* BURGER END */
+
+
+
+@media screen and (max-width: 800px) {
+    .hideTo800px, .inputSearch{
+        display: none;
+    }
+
+    #logo{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        font-size: 20px;
+        filter: grayscale(100%);
+        margin-left: 1em;
+    }
+
+    #logo:hover{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        font-size: 20px;    
+        color: white;
+        filter:contrast(100%);
+        margin-left: 1em;
+    }
+
+    .burger{
+        background-color: #222;
+        transform: rotate(90deg);
+        margin-right: 2em;
+        height: 100%;
+        width: 2rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: static;
+        color: white;
+        border: 1px solid grey;
+    }
+}
