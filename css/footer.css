@@ -1,0 +1,73 @@
+#footerGrid{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #daa520;
+}
+
+
+.footerElementContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px; 
+    min-height: 20em;
+    padding-left: 3em;
+    padding-right: 3em;
+    top: 0em;
+    font-size: 1em;
+    font-style: normal;
+  }
+  
+  .footerElementContainer img {
+    border-radius: 50%; 
+    margin-top: 1em;
+  }
+  
+
+  .footerH3{
+    font-size: 2em;
+    margin-top: 1em;
+  }
+
+
+  .fooyterButttonDiv{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    margin: 20px;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+    color: black;
+    font-size: 19px;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 auto;
+    padding: 6px;
+  }
+
+
+  .firstContainerFoot{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.containfirstContainererElementsFoot{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.containerFoot{
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: grey;
+}
+#termsId{
+    color: blue;
+}
